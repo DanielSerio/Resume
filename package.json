@@ -11,6 +11,6 @@
   },
   "scripts": {
     "start": "parcel src/index.pug",
-    "build": "parcel build src/index.pug"
+    "build": "parcel build src/index.pug --no-source-maps"
   }
 }
