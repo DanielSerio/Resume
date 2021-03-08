@@ -1,0 +1,5 @@
+.content {
+  padding-top: rem($base-unit * 8);
+
+  .section:not(:first-child) { margin-top: rem($base-unit * 4); }
+}

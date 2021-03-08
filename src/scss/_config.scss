@@ -1,0 +1,21 @@
+$base-unit: 4;
+$base-font-size: $base-unit * 4.5;
+$base-line-height: $base-unit * 6;
+
+@function rem($n) { @return #{($n / 16)}rem; }
+
+@function px($n) { @return #{$n}px; }
+
+$cultured: #f3f5f7ff;
+$rich-black-fogra-29: #121317ff;
+$deep-jungle-green: #005555ff;
+$blue-crayola: #3772ffff;
+$electric-purple: #be0affff;
+
+$background-color: $cultured;
+$body-color-em: $rich-black-fogra-29;
+$body-color: rgba($rich-black-fogra-29, 0.8);
+$body-color-muted: rgba($rich-black-fogra-29, 0.5);
+$link-color: $blue-crayola;
+$link-visited-color: $electric-purple;
+$primary-color: $deep-jungle-green;

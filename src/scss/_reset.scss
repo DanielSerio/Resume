@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+ul,
+ol {
+  padding-left: rem($base-unit * 8);
+  margin: rem($base-unit * 2) auto;
+}
+
+ul { 
+  list-style: square; 
+}
+
+a {
+  color: $link-color;
+
+  &:visited { color: $link-visited-color; }
+}

@@ -1,0 +1,43 @@
+$font-scale: 1.25;
+
+@function line-height($px) {
+  @return (ceil($px / $base-unit) * ($base-line-height / $base-font-size) ) * $base-unit;
+}
+
+html {
+  font-size: px($base-font-size);
+  line-height: px($base-line-height);
+}
+
+body,
+p {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: rem($base-unit * 2);
+}
+
+h1 { 
+  $calculated: $font-scale * $font-scale * $font-scale;
+  font-size: rem($base-font-size * $calculated); 
+  line-height: rem(line-height($base-font-size * $calculated));
+}
+h2 { 
+  $calculated: $font-scale * $font-scale;
+  font-size: rem($base-font-size * $calculated); 
+  line-height: rem(line-height($base-font-size * $calculated));
+}
+h3 { 
+  font-size: rem($base-font-size * $font-scale); 
+  line-height: rem(line-height($base-font-size * $font-scale));
+}
+
+small,
+.text-small { font-size: rem($base-unit * 3); }

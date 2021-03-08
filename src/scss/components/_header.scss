@@ -1,0 +1,14 @@
+.header {
+  margin-bottom: rem($base-unit * 2);
+  padding: rem($base-unit * 2) 0;
+  
+  h1 { color: rgba($body-color, 0.7); }
+  h2 { color: $body-color-muted; }
+  h1, 
+  h2 {
+    line-height: 1;
+    margin: 0;
+  }
+
+  span { color: $primary-color; }
+}
