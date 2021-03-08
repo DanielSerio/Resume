@@ -62,7 +62,7 @@ function setupCanvas(canvas: HTMLCanvasElement): void {
   canvas.height = CELL_SIZE * ROW_COUNT;
   canvas.width = CELL_SIZE * COL_COUNT;
   console.log(canvas);
-  canvas.style.position = 'absolute';
+  canvas.style.position = 'fixed';
   canvas.style.bottom = '0';
   canvas.style.right = '0';
   canvas.style.zIndex = '30';
